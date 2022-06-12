@@ -1,0 +1,38 @@
+{
+    "name": "Spacial alien",
+    "version":"1.0.0",
+    "author":"SALAMI Nahim",
+    "file":{
+        "alien":[
+            "alien/alien-1.png",
+            "alien/alien-2.png",
+            "alien/alien-3.png",
+            "alien/alien-4.png",
+            "alien/alien-5.png",
+            "alien/alien-6.png",
+            "alien/alien-7.png",
+            "alien/alien-8.png",
+            "alien/alien-9.png",
+            "alien/alien-10.png"
+        ],
+        "arme":[
+            "arme/arme.png",
+            "arme/arme2.png",
+            "arme/arme3.png",
+            "arme/arme4.png"
+        ],
+
+        "gamer":[
+            "gamer/img-1.png",
+            "gamer/img-2.png",
+            "gamer/img-3.png",
+            "gamer/img-4.png",
+            "gamer/img-5.png"
+        ],
+
+        "back":[
+            "back/game-bg-1.png",
+            "back/game-bg.png"
+        ]
+    }
+}

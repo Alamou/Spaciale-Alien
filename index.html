@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="css/game.css">
+    <script src="js/fabric.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <!-- <script type="text/json" src="gamer.json"></script> -->
+    <script src="js/game.js"></script>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <div class="game-style">
+        <div class="game-welcole game-component game-starter">
+            <h2 class="anime">GALAXY ALIAN</h2>
+            <button id="start">COMMENCER</button>
+        </div>
+        <div class="game-vaiseau game-component game-starter">
+            <img src="images/gamer/img-1.png" alt="Vaiseau 1">
+            <img src="images/gamer/img-2.png" alt="Vaiseau 2">
+            <img src="images/gamer/img-3.png" alt="Vaiseau 3" class="default-vaiseau">
+            <img src="images/gamer/img-4.png" alt="Vaiseau 4">
+            <img src="images/gamer/img-5.png" alt="Vaiseau 1">
+        </div>
+
+        <div class="game-menu">
+            <ul>
+                <li>Temps écouler: <span class="game-time">0s</span></li>
+                <li>Score: <span>0</span></li>
+                <li>Arme: <span>Laser</span></li>
+                <li>Niveau: <span>1</span></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

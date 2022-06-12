@@ -1,0 +1,143 @@
+body{
+    overflow: hidden;
+    margin: 0%;
+    /* background-image: url(../images/game-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat ; */
+}
+
+.game-style{
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 100%;
+    height: 100%;
+}
+
+.game-welcole{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-vaiseau{
+    position: absolute;
+    bottom: 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: auto;
+}
+
+.game-vaiseau img{
+    cursor: pointer;
+    opacity: .4;
+    height: 150px;
+    width: 100px;
+}
+
+.game-vaiseau .default-vaiseau{
+    opacity: 1 !important;
+}
+
+.game-vaiseau img:hover{
+    opacity: 1;
+}
+
+.game-menu{
+    display: none;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    margin: 1em;
+    width: auto;
+    color: #fff;
+    font-family: monospace;
+    font-size: x-large;
+}
+
+.game-menu ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.game-menu ul li{
+    margin-left: 1em;
+}
+
+/*  Effet neon fait par Farihane ZINSOU
+    Site web: http://text-neon-3d.netlify.app/
+*/
+
+/* Begin */
+
+@keyframes brillar {
+    from {
+        color: #ff80ff;
+        text-shadow: 0 0.0085em 0 #ff0dff, 0 0.017em 0.0085em #cc00cc, 0 0.0255em 0.017em #c700c7, 0 0.034em 0.017em #bd00bd, 0 0.051em 0.0085em #ad00ad, 0 0.051em 0.0255em rgba(0,0,0,0.5), 0 0 0.0425em rgba(0,0,0,0.2), 0 0.017em 0.068em rgba(0,0,0,0.4), 0 0.085em 0.102em rgba(0,0,0,0.3), 0 0.17em 0.17em rgba(0,0,0,0.2), 0 0 0.05em rgba(255,255,255,0.1), 0 0 0.1em rgba(255,255,255,0.1), 0 0 0.15em magenta, 0 0 0.2em magenta, 0 0 0.25em magenta, 0 0 0.3em magenta;
+   }
+    to {
+        color: #80ffff;
+        text-shadow: 0 0.0085em 0 #0dffff, 0 0.017em 0.0085em #00cccc, 0 0.0255em 0.017em #00c7c7, 0 0.034em 0.017em #00bdbd, 0 0.051em 0.0085em #00adad, 0 0.051em 0.0255em rgba(0,0,0,0.5), 0 0 0.0425em rgba(0,0,0,0.2), 0 0.017em 0.068em rgba(0,0,0,0.4), 0 0.085em 0.102em rgba(0,0,0,0.3), 0 0.17em 0.17em rgba(0,0,0,0.2), 0 0 0.10em rgba(255,255,255,0.1), 0 0 0.1em rgba(255,255,255,0.1), 0 0 0.2em cyan, 0 0 0.3em cyan, 0 0 0.4em cyan, 0 0 0.6em cyan;
+   }
+}
+@keyframes brillar2 {
+    from {
+        color: #b280ff;
+        text-shadow: 0 0.0085em 0 #6c0dff, 0 0.017em 0.0085em #5000cc, 0 0.0255em 0.017em #4e00c7, 0 0.034em 0.017em #4a00bd, 0 0.051em 0.0085em #4400ad, 0 0.051em 0.0255em rgba(0,0,0,0.5), 0 0 0.0425em rgba(0,0,0,0.2), 0 0.017em 0.068em rgba(0,0,0,0.4), 0 0.085em 0.102em rgba(0,0,0,0.3), 0 0.17em 0.17em rgba(0,0,0,0.2), 0 0 0.04em rgba(255,255,255,0.5), 0 0 0.08em rgba(255,255,255,0.5), 0 0 0.12em rgba(100,0,255,0.51), 0 0 0.16em rgba(100,0,255,0.51), 0 0 0.2em rgba(100,0,255,0.51), 0 0 0.24em rgba(100,0,255,0.51);
+   }
+    to {
+        color: #ff80f5;
+        text-shadow: 0 0.0085em 0 #ff0deb, 0 0.017em 0.0085em #cc00bb, 0 0.0255em 0.017em #c700b7, 0 0.034em 0.017em #bd00ad, 0 0.051em 0.0085em #ad009f, 0 0.051em 0.0255em rgba(0,0,0,0.5), 0 0 0.0425em rgba(0,0,0,0.2), 0 0.017em 0.068em rgba(0,0,0,0.4), 0 0.085em 0.102em rgba(0,0,0,0.3), 0 0.17em 0.17em rgba(0,0,0,0.2), 0 0 0.10em rgba(255,255,255,0.5), 0 0 0.08em rgba(255,255,255,0.5), 0 0 0.16em rgba(255,0,234,0.51), 0 0 0.24em rgba(255,0,234,0.51), 0 0 0.32em rgba(255,0,234,0.51), 0 0 0.48em rgba(255,0,234,0.51);
+   }
+}
+@keyframes brillar3 {
+    from {
+        color: #fcff7f;
+        text-shadow: 0 0.0085em 0 #faff0c, 0 0.017em 0.0085em #c7cb00, 0 0.0255em 0.017em #c2c600, 0 0.034em 0.017em #b8bc00, 0 0.051em 0.0085em #a9ac00, 0 0.051em 0.0255em rgba(0,0,0,0.5), 0 0 0.0425em rgba(0,0,0,0.2), 0 0.017em 0.068em rgba(0,0,0,0.4), 0 0.085em 0.102em rgba(0,0,0,0.3), 0 0.17em 0.17em rgba(0,0,0,0.2), 0 0 0.04em rgba(255,255,255,0.5), 0 0 0.08em rgba(255,255,255,0.5), 0 0 0.12em #F9FE00, 0 0 0.16em #F9FE00, 0 0 0.2em #F9FE00, 0 0 0.24em #F9FE00;
+   }
+    to {
+        color: #ceff65;
+        text-shadow: 0 0.0085em 0 #a5f100, 0 0.017em 0.0085em #79b100, 0 0.0255em 0.017em #76ac00, 0 0.034em 0.017em #6fa200, 0 0.051em 0.0085em #649200, 0 0.051em 0.0255em rgba(0,0,0,0.5), 0 0 0.0425em rgba(0,0,0,0.2), 0 0.017em 0.068em rgba(0,0,0,0.4), 0 0.085em 0.102em rgba(0,0,0,0.3), 0 0.17em 0.17em rgba(0,0,0,0.2), 0 0 0.10em rgba(255,255,255,0.5), 0 0 0.08em rgba(255,255,255,0.5), 0 0 0.16em #9ce400, 0 0 0.24em #9ce400, 0 0 0.32em #9ce400, 0 0 0.48em #9ce400;
+   }
+}
+.anime {
+    font-size: 5em;
+    font-family: cursive;
+    animation: brillar 1.5s ease-in-out infinite;
+}
+
+/* End effet neon */
+
+#start{
+    border: 1px solid #FFF;
+    background-color: aquamarine;
+    padding: 1em;
+    border-radius: 100px;
+    font-size: 2em;
+    color: #c5125a;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .anime {
+        font-size: 2em !important;
+    }
+
+    #start{
+        font-size: 1em;
+    }
+
+    .game-menu{
+        font-size: small;
+    }
+}
